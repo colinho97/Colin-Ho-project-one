@@ -1,0 +1,16 @@
+//this ensures that image elements obey the dimensions of their parents
+img {
+    //NOTE this may need to be overwritten in further partials via a width property
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+} //may need to be adjusted for different section of project (ie blog section)
+
+a {
+    display: inline-block;
+}
