@@ -220,3 +220,57 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+}
+
+/* site fonts */
+/* if we set our root element font-size to 125%, then 1 rem = 20px */
+html {
+  font-size: 125%;
+}
+
+ul,
+li,
+a,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
