@@ -10,6 +10,22 @@ input {
     margin: 0;
 }
 
+h1 {
+    font-family: $headingFont;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.055rem;
+    line-height: 1.2rem;
+}
+
+h2 {
+    font-family: $headingFont;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025rem;
+    line-height: 1.8rem;
+}
+
 ul {
     list-style: none;
 }
@@ -20,3 +36,4 @@ a {
     cursor: pointer;
     transition: 0.3s;
 }
+
