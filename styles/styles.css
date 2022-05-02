@@ -299,6 +299,9 @@ header {
 }
 
 .navBar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,6 +309,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 2rem;
+  top: 1rem;
 }
 
 .pageLinks ul {
@@ -325,5 +329,5 @@ header {
   line-height: 1.8rem;
 }
 .pageLinks ul li:nth-of-type(1) {
-  color: #70e000;
+  color: #539908;
 }

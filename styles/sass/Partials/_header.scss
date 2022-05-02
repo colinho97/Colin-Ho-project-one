@@ -6,9 +6,13 @@ header {
 }
 
 .navBar {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
+    top: 1rem;
 }
 
 .pageLinks ul {
@@ -22,7 +26,7 @@ header {
         letter-spacing: 0.025rem;
         line-height: 1.8rem;
         &:nth-of-type(1) {
-            color: #70e000;
+            color: #539908;
         }
     }
 }
