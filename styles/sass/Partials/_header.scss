@@ -1,0 +1,28 @@
+header {
+    background: url(../assets/home-1.jpeg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.pageLinks ul {
+    display: flex;
+    align-items: center;
+    li {
+        padding: 1.2rem 1rem;
+        font-family: $headingFont;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.025rem;
+        line-height: 1.8rem;
+        &:nth-of-type(1) {
+            color: #70e000;
+        }
+    }
+}

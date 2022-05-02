@@ -290,3 +290,40 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+header {
+  background: url(../assets/home-1.jpeg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.pageLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pageLinks ul li {
+  padding: 1.2rem 1rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025rem;
+  line-height: 1.8rem;
+}
+.pageLinks ul li:nth-of-type(1) {
+  color: #70e000;
+}
