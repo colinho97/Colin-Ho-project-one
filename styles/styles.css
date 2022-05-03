@@ -425,6 +425,7 @@ header {
 }
 .recipeBar:nth-of-type(2) .recipeContent li p {
   font-size: 0.6rem;
+  opacity: 0.5;
 }
 
 .recipeInfo {
@@ -440,4 +441,42 @@ header {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.ourRestaurants .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 70vh;
+}
+.ourRestaurants .wrapper .restaurantInfo {
+  width: 55%;
+  margin-top: 3rem;
+}
+.ourRestaurants .wrapper .restaurantInfo p {
+  font-size: 0.6rem;
+  opacity: 0.5;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  margin-top: 1.5rem;
+}
+
+.pictureBox {
+  position: relative;
+}
+.pictureBox .pictureBoxLogo {
+  position: absolute;
+  top: -6rem;
+  right: -5rem;
 }

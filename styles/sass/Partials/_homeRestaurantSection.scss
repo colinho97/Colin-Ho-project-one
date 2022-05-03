@@ -1,0 +1,30 @@
+.ourRestaurants {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 70vh;
+        .restaurantInfo {
+            width: 55%;
+            margin-top: 3rem;
+            p {
+                font-size: 0.6rem;
+                opacity: 0.5;
+                line-height: 1.2rem;
+                letter-spacing: 0.015rem;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+    
+.pictureBox {
+    position: relative;
+    .pictureBoxLogo {
+        position: absolute;
+        top: -6rem;
+        right: -5rem;
+    }
+}
