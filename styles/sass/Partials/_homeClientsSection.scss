@@ -1,0 +1,43 @@
+.clientsQuote {
+    background-color: #b5e48c;
+}
+
+.clientsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+
+    .clientsInfo {
+        display: flex;
+        margin-top: 2rem;
+        span {
+            font-size: 3rem;
+            color: $white;
+            &:nth-of-type(2) {
+                align-self: flex-end;
+            }
+        }
+        p {
+            font-size: 1.2rem;
+            font-style: italic;
+            line-height: 1.8rem;
+            letter-spacing: 0.03rem;
+            margin: 0 2rem;
+        }
+    }
+
+    .clientsArrow {
+        margin-top: 4rem;
+        color: $white;
+        font-size: 1.5rem;
+        span {
+            padding: 0rem 1rem;
+            &:nth-of-type(1) {
+                opacity: 0.5;
+            }
+        }
+    }
+}
