@@ -548,3 +548,12 @@ header {
 .clientsWrapper .clientsArrow span:nth-of-type(1) {
   opacity: 0.5;
 }
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.055rem;
+  line-height: 1.2rem;
+  color: #539908;
+}
