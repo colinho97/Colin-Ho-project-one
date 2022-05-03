@@ -253,6 +253,7 @@ a {
 /* if we set our root element font-size to 125%, then 1 rem = 20px */
 html {
   font-size: 125%;
+  font-family: "Lora", serif;
 }
 
 ul,
@@ -273,10 +274,24 @@ h1 {
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.025rem;
   line-height: 1.8rem;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  padding-top: 0.5rem;
+  border-bottom: 0.2rem solid #539908;
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 
 ul {
@@ -330,4 +345,99 @@ header {
 }
 .pageLinks ul li:nth-of-type(1) {
   color: #539908;
+}
+
+.recipeBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.recipeBar p {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  color: #333333;
+}
+.recipeBar:nth-of-type(1) .recipeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.recipeBar:nth-of-type(1) .recipeInfo .recipeContent {
+  width: 70%;
+}
+.recipeBar:nth-of-type(1) .recipeInfo .recipeContent button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-style: none;
+  background-color: #539908;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.recipeBar:nth-of-type(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.recipeBar:nth-of-type(2) .recipeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.recipeBar:nth-of-type(2) .recipeContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 3rem 0;
+}
+.recipeBar:nth-of-type(2) .recipeContent li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+}
+.recipeBar:nth-of-type(2) .recipeContent li span {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.recipeBar:nth-of-type(2) .recipeContent li p {
+  font-size: 0.6rem;
+}
+
+.recipeInfo {
+  min-width: 50%;
+  background-color: #F6F6F6;
+}
+
+.recipeBar img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-width: 50%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
