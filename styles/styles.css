@@ -294,6 +294,16 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.055rem;
+  line-height: 1.2rem;
+  color: #539908;
+}
+
 ul {
   list-style: none;
 }
@@ -549,11 +559,81 @@ header {
   opacity: 0.5;
 }
 
-h4 {
-  font-family: "Raleway", sans-serif;
-  font-size: 2.3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.055rem;
+h4,
+h5 {
+  margin-bottom: 3rem;
+}
+
+.footerOuterWrapper {
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footerOuterWrapper .footerMain {
+  background-color: #333333;
+  color: #F6F6F6;
+  height: 80%;
+}
+.footerOuterWrapper .footerMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footerOuterWrapper .footerSub {
+  background-color: #2E2E2E;
+  color: #F6F6F6;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerSections {
+  width: 33.3333333333%;
+  margin: 4rem 3rem;
+}
+.footerSections ul {
+  font-size: 0.7rem;
   line-height: 1.2rem;
-  color: #539908;
+  letter-spacing: 0.015rem;
+  color: #F6F6F6;
+  opacity: 0.5;
+}
+.footerSections ul li {
+  line-height: 2rem;
+  border-bottom: 0.2rem solid rgba(246, 246, 246, 0.2);
+}
+
+.emailButton {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.emailInputBox {
+  margin: 0;
+}
+
+.socialLinks {
+  line-height: 2rem;
+  margin-top: 1rem;
+  border-top: 0.2rem solid rgba(246, 246, 246, 0.2);
+  padding-top: 0.5rem;
+}
+.socialLinks span {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
 }
