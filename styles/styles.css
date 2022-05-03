@@ -471,11 +471,12 @@ header {
   min-height: 70vh;
 }
 .ourRestaurants .wrapper .restaurantPictures {
-  margin-top: 4rem;
+  margin-top: 10rem;
 }
 .ourRestaurants .wrapper .restaurantInfo {
   width: 55%;
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 .ourRestaurants .wrapper .restaurantInfo p {
   font-size: 0.6rem;
