@@ -560,8 +560,13 @@ header {
   opacity: 0.5;
 }
 
-h4,
+h4 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 h5 {
+  margin-top: 2.2rem;
   margin-bottom: 3rem;
 }
 
@@ -587,9 +592,9 @@ h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .footerOuterWrapper .footerSub {
   background-color: #2E2E2E;
@@ -605,31 +610,97 @@ h5 {
 
 .footerSections {
   width: 33.3333333333%;
-  margin: 4rem 3rem;
+  margin: 4rem 0;
 }
-.footerSections ul {
+.footerSections:nth-of-type(2) {
+  margin: 4rem 6rem;
+}
+.footerSections ul,
+.footerSections p {
   font-size: 0.7rem;
   line-height: 1.2rem;
   letter-spacing: 0.015rem;
   color: #F6F6F6;
   opacity: 0.5;
 }
-.footerSections ul li {
+.footerSections ul li,
+.footerSections p li {
   line-height: 2rem;
   border-bottom: 0.2rem solid rgba(246, 246, 246, 0.2);
 }
 
-.emailButton {
-  margin-bottom: 1rem;
-  padding-top: 1rem;
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+  width: 90%;
 }
-
-.emailInputBox {
-  margin: 0;
+form input, form textarea {
+  width: 80%;
+  padding: 1rem 1rem;
+  border: none;
+  background-color: #999999;
+  opacity: 0.5;
+}
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  color: #F6F6F6;
+  opacity: 1;
+}
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  color: #F6F6F6;
+  opacity: 1;
+}
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  color: #F6F6F6;
+  opacity: 1;
+}
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  color: #F6F6F6;
+  opacity: 1;
+}
+form input::placeholder, form textarea::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  color: #F6F6F6;
+  opacity: 1;
+}
+form button {
+  width: 20%;
+  border-radius: 0;
+  border: none;
+  font-size: 1.2rem;
+  background: #539908;
+}
+form button span {
+  color: white;
 }
 
 .socialLinks {
-  line-height: 2rem;
+  line-height: 4rem;
   margin-top: 1rem;
   border-top: 0.2rem solid rgba(246, 246, 246, 0.2);
   padding-top: 0.5rem;
