@@ -1,0 +1,7 @@
+.foodGallery {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        width: calc(100%/3);
+    }
+}
