@@ -13,8 +13,8 @@
 </head>
 <body>
     <!-- Skip Link -->
-    <a href="#mainContent" class="skip-link">Skip to main content.</a>
-    <header id="home">
+    <a href="#about" class="skip-link">Skip to main content.</a>
+    <header id="home" class="indexHeader">
         <nav class="navBar">
             <div class="logo">
                 <a href="./index.html">
@@ -23,13 +23,13 @@
             </div>
             <div class="pageLinks">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li>ABOUT</li>
-                    <li>RECIPES</li>
+                    <li><a href="#home" class="current">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#recipes">RECIPES</a></li>
                     <li>NUTRITION</li>
-                    <li>BLOG</li>
+                    <li><a href="./blog.html">BLOG</a></li>
                     <li>SHOP</li>
-                    <li>CONTACT</li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                     <li><span class="fa-solid fa-bag-shopping"></span></li>
                     <li><span class="fa-solid fa-magnifying-glass"></span></li>
                 </ul>
@@ -39,7 +39,7 @@
     
     <main>
         <!-- First Section -->
-        <section class="recipeArea">
+        <section class="recipeArea" id="recipes">
             <div class="recipeBar">
                 <div class="recipeInfo">
                     <div class="recipeContent">
@@ -102,7 +102,7 @@
         </section>
 
         <!-- Second Section -->
-        <section class="ourRestaurants">
+        <section class="ourRestaurants" id="about">
             <div class="wrapper">
                 <div class="restaurantPictures">
                     <div class="pictureBox">

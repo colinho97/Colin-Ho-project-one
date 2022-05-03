@@ -1,8 +1,12 @@
 header {
+    min-height: 100vh;
+}
+
+//index file header styles
+.indexHeader {
     background: url(../assets/home-1.jpeg) center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
 }
 
 .navBar {
@@ -25,8 +29,23 @@ header {
         text-transform: uppercase;
         letter-spacing: 0.025rem;
         line-height: 1.8rem;
-        &:nth-of-type(1) {
+        .current {
             color: $green;
         }
     }
+}
+
+
+//blog file header styles
+.blogHeader {
+    background: url(../assets/blog-1.jpeg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//contact file header styles
+.contactHeader {
+    background: url(../assets/contact-1.jpeg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

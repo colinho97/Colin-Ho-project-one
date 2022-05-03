@@ -317,10 +317,13 @@ a {
 }
 
 header {
+  min-height: 100vh;
+}
+
+.indexHeader {
   background: url(../assets/home-1.jpeg) center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
 }
 
 .navBar {
@@ -353,8 +356,20 @@ header {
   letter-spacing: 0.025rem;
   line-height: 1.8rem;
 }
-.pageLinks ul li:nth-of-type(1) {
+.pageLinks ul li .current {
   color: #539908;
+}
+
+.blogHeader {
+  background: url(../assets/blog-1.jpeg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactHeader {
+  background: url(../assets/contact-1.jpeg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .recipeBar {
