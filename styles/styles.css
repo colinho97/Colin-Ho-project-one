@@ -626,6 +626,7 @@ h5 {
 .footerSections ul li,
 .footerSections p li {
   line-height: 2rem;
+  padding-bottom: 0.7rem;
   border-bottom: 0.2rem solid rgba(246, 246, 246, 0.2);
 }
 
@@ -633,12 +634,12 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem 0;
+  margin: 2rem 0;
   width: 90%;
 }
 form input, form textarea {
   width: 80%;
-  padding: 1rem 1rem;
+  padding: 0.7rem 1rem;
   border: none;
   background-color: #999999;
   opacity: 0.5;

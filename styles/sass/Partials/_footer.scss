@@ -52,6 +52,7 @@ h5 {
         opacity: 0.5;
         li {
             line-height: 2rem;
+            padding-bottom: 0.7rem;
             border-bottom: 0.2rem solid rgba($color: $white, $alpha: 0.2);
         }
         
@@ -60,11 +61,11 @@ h5 {
 
 form {
     display: flex;
-    margin: 1rem 0;
+    margin: 2rem 0;
     width: 90%;
     input, textarea {
         width: 80%;
-        padding: 1rem 1rem;
+        padding: 0.7rem 1rem;
         border: none;
         background-color: $grey;
         opacity: 0.5;
