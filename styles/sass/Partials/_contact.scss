@@ -70,8 +70,54 @@
 .contactDetailsBox {
     width: 40%;
     background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    p {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.015rem;
+        color: $lightBlack;
+    }
+
+    .workingHoursLightText {
+        opacity: 0.5;
+        font-style: italic;
+    }
+
+    .contactInfoLightText {
+        opacity: 0.5;
+    }
+}
+
+.contactDetailsWrapper {
+    width: 45%;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-top: 3rem;
+    }
+}
+
+.contactDescriptionContainer,
+.workingHoursContainer,
+.contactInfoContainer {
+    margin-bottom: 2.2rem;
 }
 
 .contactH2::after {
     border-bottom: none;
+}
+
+//Dragonfruit styles
+
+.dragonFruitPicture {
+    img {
+        min-width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
