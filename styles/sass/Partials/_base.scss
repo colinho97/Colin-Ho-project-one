@@ -14,3 +14,17 @@ img {
 a {
     display: inline-block;
 }
+
+form {
+    input, textarea {
+        padding: 0.7rem 1rem;
+        border: none;
+        &::placeholder {
+            font-family: $bodyFont;
+            font-size: 0.7rem;
+            font-style: italic;
+            line-height: 1.2rem;
+            letter-spacing: 0.015rem;
+        }
+    }
+}

@@ -59,22 +59,15 @@ h5 {
     }
 }
 
-form {
+footer form {
     display: flex;
     margin: 2rem 0;
     width: 90%;
     input, textarea {
         width: 80%;
-        padding: 0.7rem 1rem;
-        border: none;
         background-color: $grey;
         opacity: 0.5;
         &::placeholder {
-            font-family: $bodyFont;
-            font-size: 0.7rem;
-            font-style: italic;
-            line-height: 1.2rem;
-            letter-spacing: 0.015rem;
             color: $white;
             opacity: 1;
         }
