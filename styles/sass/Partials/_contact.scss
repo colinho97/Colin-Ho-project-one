@@ -46,8 +46,10 @@
     .formTop {
         display: flex;
         justify-content: space-between;
+        gap: 3rem;
         input {
-            padding: 0.7rem 5rem 0.7rem 1rem;
+            overflow: hidden;
+            flex-grow: 1;
         }
     }
 

@@ -827,9 +827,13 @@ footer form button span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 3rem;
 }
 .contactForm .formTop input {
-  padding: 0.7rem 5rem 0.7rem 1rem;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .contactForm button {
   width: 30%;
