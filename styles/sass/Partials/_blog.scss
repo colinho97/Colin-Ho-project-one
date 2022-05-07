@@ -1,0 +1,7 @@
+.blogH2 {
+    margin-top: 7rem;
+
+    &::after {
+        border-bottom: none;
+    }
+}

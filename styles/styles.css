@@ -894,3 +894,10 @@ footer form button span {
 .contactH2::after {
   border-bottom: none;
 }
+
+.blogH2 {
+  margin-top: 7rem;
+}
+.blogH2::after {
+  border-bottom: none;
+}
