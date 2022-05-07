@@ -356,10 +356,6 @@ a {
   transition: 0.3s;
 }
 
-header {
-  min-height: 100vh;
-}
-
 .indexHeader {
   background: url(../assets/home-1.jpeg) center;
   background-repeat: no-repeat;
@@ -400,14 +396,9 @@ header {
   color: #539908;
 }
 
-.blogHeader {
-  background: url(../assets/blog-1.jpeg) center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.contactHeader {
-  background: url(../assets/contact-1.jpeg) center;
+.bannerImage img {
+  min-width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -902,11 +893,4 @@ footer form button span {
 
 .contactH2::after {
   border-bottom: none;
-}
-
-.dragonFruitPicture img {
-  min-width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

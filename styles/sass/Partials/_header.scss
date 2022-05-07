@@ -1,7 +1,3 @@
-header {
-    min-height: 100vh;
-}
-
 //index file header styles
 .indexHeader {
     background: url(../assets/home-1.jpeg) center;
@@ -36,16 +32,13 @@ header {
 }
 
 
-//blog file header styles
-.blogHeader {
-    background: url(../assets/blog-1.jpeg) center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+//Banner Image styles
 
-//contact file header styles
-.contactHeader {
-    background: url(../assets/contact-1.jpeg) center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bannerImage {
+    img {
+        min-width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
