@@ -356,12 +356,6 @@ a {
   transition: 0.3s;
 }
 
-.indexHeader {
-  background: url(../assets/home-1.jpeg) center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .navBar {
   position: fixed;
   z-index: 2;
@@ -465,7 +459,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: 3rem 0;
 }
 .recipeBar:nth-of-type(2) .recipeContent li {
@@ -482,6 +476,9 @@ a {
 .recipeBar:nth-of-type(2) .recipeContent li p {
   font-size: 0.6rem;
   opacity: 0.5;
+}
+.recipeBar:nth-of-type(2) .recipeContent li .fa-mug-saucer {
+  font-size: 1.5rem;
 }
 
 .recipeInfo {
@@ -1159,4 +1156,30 @@ footer form button span {
   letter-spacing: 0.015rem;
   background-color: #539908;
   color: #F6F6F6;
+}
+
+@media (max-width: 1200px) {
+  .indexHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .recipeArea .recipeBar:nth-of-type(2) .recipeContent li {
+    width: 100%;
+  }
+
+  .footerOuterWrapper .footerMain .wrapper {
+    width: 90%;
+  }
 }
