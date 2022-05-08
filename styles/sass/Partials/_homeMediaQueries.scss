@@ -2,36 +2,90 @@
 
 @media (max-width: 1200px) {
     // Nav Styles
+    
+        .indexHeader {
+            display: flex;
+        }
 
-    .indexHeader {
-        display: flex;
-    }
 
-    .navBar {
-        flex-direction: column;
-        align-items: center;
-    }
+        .navBar {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    //Recipe Section Styles
+        //Recipe Section Styles
 
-    .recipeArea {
-        .recipeBar {
-            &:nth-of-type(2) {
-                .recipeContent {
-                    li {
-                        width: 100%;
+        .recipeArea {
+            .recipeBar {
+                &:nth-of-type(2) {
+                    .recipeContent {
+                        li {
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
-    }
-
     //Footer Styles
 
-    .footerOuterWrapper .footerMain .wrapper {
+    .footerOuterWrapper .footerMain .wrapper,
+    .footerSub .wrapper {
         width: 90%;
     }
 
+}
 
+
+// Responsive design for screens <1024px
+
+@media (max-width: 1024px) {
+    .indexHeader .navBar {
+        top: 0;
+        .pageLinks {
+            margin-top: -1rem;
+        }
+    }
+
+    .clientsQuote .clientsWrapper h2 {
+        margin-top: 3rem;
+    }
+
+    .clientsQuote .clientsWrapper .clientsArrow {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+// Responsive design for screens <768px
+@media (max-width: 768px) {
+    .indexHeader .navBar .pageLinks {
+        margin-top: -2rem;
+        li {
+            font-size: 0.6rem;
+        }
+    }
+
+    .recipeArea .recipeBar:nth-of-type(1) {
+        flex-direction: column;
+        .recipeContent {
+            margin: 3rem 0;
+        }
+    }
+
+    .recipeArea .recipeBar:nth-of-type(2) {
+        flex-direction: column;
+    }
+
+    .clientsQuote .wrapper {
+        width: 90%;
+    }
+
+    .footerOuterWrapper .footerMain .wrapper {
+        flex-direction: column;
+        .footerSections {
+            width: 90%;
+        }
+    }
 
 }
