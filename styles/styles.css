@@ -1084,3 +1084,79 @@ footer form button span {
   border-left: none;
   border-bottom: 0.5rem solid transparent;
 }
+
+.futureCommentsWrapper {
+  margin-bottom: 7rem;
+}
+.futureCommentsWrapper p {
+  margin-top: -0.7rem;
+  margin-bottom: 2rem;
+  font-size: 0.7rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  color: #333333;
+  opacity: 0.5;
+}
+
+.commentsForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.commentsForm input, .commentsForm textarea {
+  border: 4px solid #F6F6F6;
+  margin-bottom: 2rem;
+}
+.commentsForm input::-webkit-input-placeholder, .commentsForm textarea::-webkit-input-placeholder {
+  color: #2E2E2E;
+  font-style: normal;
+}
+.commentsForm input::-moz-placeholder, .commentsForm textarea::-moz-placeholder {
+  color: #2E2E2E;
+  font-style: normal;
+}
+.commentsForm input:-ms-input-placeholder, .commentsForm textarea:-ms-input-placeholder {
+  color: #2E2E2E;
+  font-style: normal;
+}
+.commentsForm input::-ms-input-placeholder, .commentsForm textarea::-ms-input-placeholder {
+  color: #2E2E2E;
+  font-style: normal;
+}
+.commentsForm input::placeholder, .commentsForm textarea::placeholder {
+  color: #2E2E2E;
+  font-style: normal;
+}
+.commentsForm .commentFormTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+.commentsForm .commentFormTop input {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.commentsForm button {
+  width: 20%;
+  padding: 1rem 1.5rem;
+  border: none;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  background-color: #539908;
+  color: #F6F6F6;
+}
