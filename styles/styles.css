@@ -477,6 +477,9 @@ a {
   .footerOuterWrapper .footerMain .wrapper .footerSections {
     width: 90%;
   }
+  .footerOuterWrapper .footerMain .wrapper .footerSections:nth-of-type(2) {
+    margin: 0;
+  }
 }
 .recipeBar {
   display: -webkit-box;
