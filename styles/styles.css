@@ -397,90 +397,6 @@ a {
   background-size: cover;
 }
 
-@media (max-width: 1200px) {
-  .indexHeader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .navBar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .recipeArea .recipeBar:nth-of-type(2) .recipeContent li {
-    width: 100%;
-  }
-
-  .footerOuterWrapper .footerMain .wrapper,
-.footerSub .wrapper {
-    width: 90%;
-  }
-}
-@media (max-width: 1024px) {
-  .indexHeader .navBar {
-    top: 0;
-  }
-  .indexHeader .navBar .pageLinks {
-    margin-top: -1rem;
-  }
-
-  .clientsQuote .clientsWrapper h2 {
-    margin-top: 3rem;
-  }
-
-  .clientsQuote .clientsWrapper .clientsArrow {
-    margin-bottom: 3rem;
-  }
-}
-@media (max-width: 768px) {
-  .indexHeader .navBar .pageLinks {
-    margin-top: -2rem;
-  }
-  .indexHeader .navBar .pageLinks li {
-    font-size: 0.6rem;
-  }
-
-  .recipeArea .recipeBar:nth-of-type(1) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .recipeArea .recipeBar:nth-of-type(1) .recipeContent {
-    margin: 3rem 0;
-  }
-
-  .recipeArea .recipeBar:nth-of-type(2) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .clientsQuote .wrapper {
-    width: 90%;
-  }
-
-  .footerOuterWrapper .footerMain .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footerOuterWrapper .footerMain .wrapper .footerSections {
-    width: 90%;
-  }
-  .footerOuterWrapper .footerMain .wrapper .footerSections:nth-of-type(2) {
-    margin: 0;
-  }
-}
 .recipeBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1240,4 +1156,130 @@ footer form button span {
   letter-spacing: 0.015rem;
   background-color: #539908;
   color: #F6F6F6;
+}
+
+@media (max-width: 1200px) {
+  .indexHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footerOuterWrapper .footerMain .wrapper,
+.footerSub .wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .navBar {
+    top: 0;
+  }
+  .navBar .pageLinks {
+    margin-top: -1rem;
+  }
+}
+@media (max-width: 768px) {
+  .navBar .pageLinks {
+    margin-top: -2rem;
+  }
+  .navBar .pageLinks li {
+    font-size: 0.6rem;
+  }
+
+  .footerOuterWrapper .footerMain .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerOuterWrapper .footerMain .wrapper .footerSections {
+    width: 90%;
+  }
+  .footerOuterWrapper .footerMain .wrapper .footerSections:nth-of-type(2) {
+    margin: 0;
+  }
+
+  .blogCommentSection .futureCommentsWrapper button {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .recipeArea .recipeBar:nth-of-type(2) .recipeContent li {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .clientsQuote .clientsWrapper h2 {
+    margin-top: 3rem;
+  }
+
+  .clientsQuote .clientsWrapper .clientsArrow {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .recipeArea .recipeBar:nth-of-type(1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recipeArea .recipeBar:nth-of-type(1) .recipeContent {
+    margin: 3rem 0;
+  }
+
+  .recipeArea .recipeBar:nth-of-type(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .clientsQuote .wrapper {
+    width: 90%;
+  }
+
+  .contactInfoSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactInfoSection .contactFormBox,
+.contactInfoSection .contactDetailsBox,
+.contactInfoSection .contactFormOuterWrapper {
+    width: 100%;
+  }
+  .contactInfoSection .contactFormBox .contactFormInnerWrapper,
+.contactInfoSection .contactFormBox .contactDetailsWrapper,
+.contactInfoSection .contactDetailsBox .contactFormInnerWrapper,
+.contactInfoSection .contactDetailsBox .contactDetailsWrapper,
+.contactInfoSection .contactFormOuterWrapper .contactFormInnerWrapper,
+.contactInfoSection .contactFormOuterWrapper .contactDetailsWrapper {
+    width: 90%;
+    margin: 0;
+  }
+  .contactInfoSection .contactFormBox .contactFormInnerWrapper button,
+.contactInfoSection .contactFormBox .contactDetailsWrapper button,
+.contactInfoSection .contactDetailsBox .contactFormInnerWrapper button,
+.contactInfoSection .contactDetailsBox .contactDetailsWrapper button,
+.contactInfoSection .contactFormOuterWrapper .contactFormInnerWrapper button,
+.contactInfoSection .contactFormOuterWrapper .contactDetailsWrapper button {
+    margin-bottom: 2rem;
+  }
+  .contactInfoSection .contactDetailsBox {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }

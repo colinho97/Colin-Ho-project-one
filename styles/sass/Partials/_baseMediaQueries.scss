@@ -1,0 +1,64 @@
+// Responsive design for screens <1200px
+
+@media (max-width: 1200px) {
+    // Nav Styles
+    
+        .indexHeader {
+            display: flex;
+        }
+
+
+        .navBar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    //Footer Styles
+
+    .footerOuterWrapper .footerMain .wrapper,
+    .footerSub .wrapper {
+        width: 90%;
+    }
+
+}
+
+
+// Responsive design for screens <1024px
+
+@media (max-width: 1024px) {
+    .navBar {
+        top: 0;
+        .pageLinks {
+            margin-top: -1rem;
+        }
+    }
+
+}
+
+
+
+// Responsive design for screens <768px
+@media (max-width: 768px) {
+    .navBar .pageLinks {
+        margin-top: -2rem;
+        li {
+            font-size: 0.6rem;
+        }
+    }
+
+    .footerOuterWrapper .footerMain .wrapper {
+        flex-direction: column;
+        .footerSections {
+            width: 90%;
+
+        &:nth-of-type(2) {
+            margin: 0;
+        }
+        }
+    }
+
+    .blogCommentSection .futureCommentsWrapper button {
+        width: 100%;
+    }
+
+}
