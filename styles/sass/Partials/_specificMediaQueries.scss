@@ -72,4 +72,44 @@
         }
 
     }
+
+    .blogCommentSection .futureCommentsWrapper button {
+        width: 100%;
+    }
+
+    .blogRelatedPosts {
+        text-align: center;
+        h5 {
+            font-size: 1.7rem;
+        }
+        .blogRelatedPostWrapper {
+            flex-direction: column;
+            .blogPostContainer {
+                width: 100%;
+                .blogPostImageContainer {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .ourRestaurants .restaurantPictures .pictureBoxLogo {
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .clientsQuote .clientsWrapper .clientsInfo p {
+        font-size: 0.7rem;
+    }
+
+    .ourRestaurants .restaurantPictures .pictureBoxLogo {
+        right: 0;
+    }
+
+    .blogCommentSection .futureCommentsWrapper .commentFormTop {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }

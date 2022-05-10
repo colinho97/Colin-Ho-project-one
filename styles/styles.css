@@ -390,6 +390,12 @@ a {
   color: #539908;
 }
 
+.navFirstHalf, .navSecondHalf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .bannerImage img {
   min-width: 100%;
   background-position: center;
@@ -1187,6 +1193,10 @@ footer form button span {
   .navBar .pageLinks {
     margin-top: -1rem;
   }
+
+  .blogCommentSection .futureCommentsWrapper button {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .navBar .pageLinks {
@@ -1194,6 +1204,22 @@ footer form button span {
   }
   .navBar .pageLinks li {
     font-size: 0.6rem;
+  }
+
+  .pageLinks ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pageLinks ul .navFirstHalf {
+    margin-top: -0.7rem;
+  }
+  .pageLinks ul .navSecondHalf {
+    margin-top: -2.5rem;
   }
 
   .footerOuterWrapper .footerMain .wrapper {
@@ -1207,10 +1233,6 @@ footer form button span {
   }
   .footerOuterWrapper .footerMain .wrapper .footerSections:nth-of-type(2) {
     margin: 0;
-  }
-
-  .blogCommentSection .futureCommentsWrapper button {
-    width: 100%;
   }
 }
 @media (max-width: 1200px) {
@@ -1281,5 +1303,54 @@ footer form button span {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .blogCommentSection .futureCommentsWrapper button {
+    width: 100%;
+  }
+
+  .blogRelatedPosts {
+    text-align: center;
+  }
+  .blogRelatedPosts h5 {
+    font-size: 1.7rem;
+  }
+  .blogRelatedPosts .blogRelatedPostWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogRelatedPosts .blogRelatedPostWrapper .blogPostContainer {
+    width: 100%;
+  }
+  .blogRelatedPosts .blogRelatedPostWrapper .blogPostContainer .blogPostImageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .ourRestaurants .restaurantPictures .pictureBoxLogo {
+    right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .clientsQuote .clientsWrapper .clientsInfo p {
+    font-size: 0.7rem;
+  }
+
+  .ourRestaurants .restaurantPictures .pictureBoxLogo {
+    right: 0;
+  }
+
+  .blogCommentSection .futureCommentsWrapper .commentFormTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
   }
 }

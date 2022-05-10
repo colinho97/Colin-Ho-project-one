@@ -33,6 +33,9 @@
         }
     }
 
+    .blogCommentSection .futureCommentsWrapper button {
+        width: 100%;
+    }
 }
 
 
@@ -43,6 +46,17 @@
         margin-top: -2rem;
         li {
             font-size: 0.6rem;
+        }
+    }
+
+    .pageLinks ul {
+        display: flex;
+        flex-direction: column;
+        .navFirstHalf {
+            margin-top: -0.7rem;
+        }
+        .navSecondHalf {
+            margin-top: -2.5rem;
         }
     }
 
@@ -57,8 +71,6 @@
         }
     }
 
-    .blogCommentSection .futureCommentsWrapper button {
-        width: 100%;
-    }
+
 
 }
