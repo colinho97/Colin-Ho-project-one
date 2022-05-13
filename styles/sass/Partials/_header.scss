@@ -7,11 +7,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 2rem;
     top: 1rem;
 }
 
-.pageLinks ul {
+.pageLinks .navMenu {
     display: flex;
     align-items: center;
     li {
@@ -27,8 +28,27 @@
     }
 }
 
-.navFirstHalf, .navSecondHalf {
-    display: flex;
+//hamburger menu styles
+
+.navLink {
+    transition: 0.3s;
+    &:hover {
+        color: $green;
+    }
+}
+
+.hamburgerContainer {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerBars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
 }
 
 //Banner Image styles
