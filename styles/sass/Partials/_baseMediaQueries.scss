@@ -8,30 +8,30 @@
         display: block;
     }
 
-    .hamburgerContainer:active .hamburgerBar:nth-child(2) {
+    .hamburgerContainer.active .hamburgerBars:nth-child(2) {
         opacity: 0;
     }
-    .hamburgerContainer:active .hamburgerBar:nth-child(1) {
+    .hamburgerContainer.active .hamburgerBars:nth-child(1) {
         transform: translateY(8px) rotate(45deg);   
     }
-    .hamburgerContainer:active .hamburgerBar:nth-child(3) {
+    .hamburgerContainer.active .hamburgerBars:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);   
     }
 
     .navMenu {
         position: fixed;
         right: -100%;
-        gap: 0;
         flex-direction: column;
         background-color: $white;
-        width: 50%;
+        width: 25%;
         text-align: center;
         transition: 0.3s;
-        .navItem {
-            margin: 0.8rem 0;
-        }
-        &:active {
+        &.active {
             right: 0;
+            margin-top: -1.3rem;
+        }
+        .navIcons {
+            display: none;
         }
     }
 

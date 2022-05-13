@@ -358,7 +358,7 @@ a {
 
 .navBar {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,16 +1189,16 @@ footer form button span {
     display: block;
   }
 
-  .hamburgerContainer:active .hamburgerBar:nth-child(2) {
+  .hamburgerContainer.active .hamburgerBars:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburgerContainer:active .hamburgerBar:nth-child(1) {
+  .hamburgerContainer.active .hamburgerBars:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
             transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburgerContainer:active .hamburgerBar:nth-child(3) {
+  .hamburgerContainer.active .hamburgerBars:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
@@ -1206,22 +1206,22 @@ footer form button span {
   .navMenu {
     position: fixed;
     right: -100%;
-    gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #F6F6F6;
-    width: 50%;
+    width: 25%;
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .navMenu .navItem {
-    margin: 0.8rem 0;
-  }
-  .navMenu:active {
+  .navMenu.active {
     right: 0;
+    margin-top: -1.3rem;
+  }
+  .navMenu .navIcons {
+    display: none;
   }
 
   .footerOuterWrapper .footerMain .wrapper,

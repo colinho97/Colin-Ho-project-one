@@ -3,7 +3,7 @@
 
 .navBar {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -49,6 +49,7 @@
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background-color: black;
+    // z-index: 4;
 }
 
 //Banner Image styles
