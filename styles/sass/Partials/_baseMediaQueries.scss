@@ -3,15 +3,37 @@
 @media (max-width: 1200px) {
     // Nav Styles
     
-        .indexHeader {
-            display: flex;
-        }
 
+    .hamburgerContainer {
+        display: block;
+    }
 
-        .navBar {
-            flex-direction: column;
-            align-items: center;
+    .hamburgerContainer.active .hamburgerBars:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburgerContainer.active .hamburgerBars:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);   
+    }
+    .hamburgerContainer.active .hamburgerBars:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);   
+    }
+
+    .navMenu {
+        position: fixed;
+        right: -100%;
+        flex-direction: column;
+        background-color: $white;
+        width: 25%;
+        text-align: center;
+        transition: 0.3s;
+        &.active {
+            right: 0;
+            margin-top: -1.3rem;
         }
+        .navIcons {
+            display: none;
+        }
+    }
 
     //Footer Styles
 
@@ -26,12 +48,12 @@
 // Responsive design for screens <1024px
 
 @media (max-width: 1024px) {
-    .navBar {
-        top: 0;
-        .pageLinks {
-            margin-top: -1rem;
-        }
-    }
+    // .navBar {
+    //     top: 0;
+    //     .pageLinks {
+    //         margin-top: -1rem;
+    //     }
+    // }
 
     .blogCommentSection .futureCommentsWrapper button {
         width: 100%;
@@ -42,24 +64,9 @@
 
 // Responsive design for screens <768px
 @media (max-width: 768px) {
-    .navBar .pageLinks {
-        margin-top: -2rem;
-        li {
-            font-size: 0.6rem;
-        }
-    }
 
-    .pageLinks ul {
-        display: flex;
-        flex-direction: column;
-        .navFirstHalf {
-            margin-top: -0.7rem;
-        }
-        .navSecondHalf {
-            margin-top: -2.5rem;
-        }
-    }
 
+    //footer styles
     .footerOuterWrapper .footerMain .wrapper {
         flex-direction: column;
         .footerSections {
